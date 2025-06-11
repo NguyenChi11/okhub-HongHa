@@ -1,4 +1,3 @@
-
 import Header from "./components/Header/Header";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -23,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${tripsSans.variable}`}>
-      <Header/>
       <body>
+        <Header />
         {children}
       </body>
     </html>

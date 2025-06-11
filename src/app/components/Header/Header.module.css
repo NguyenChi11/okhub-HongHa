@@ -1,4 +1,4 @@
-.header-container-wrap {
+.header {
   width: 100rem;
   display: flex;
   align-items: center;
@@ -8,4 +8,15 @@
   left: 0;
   z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    width: 40rem;
+  }
 }

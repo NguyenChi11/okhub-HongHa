@@ -4,7 +4,7 @@ import { assets } from "@/app/public/assets/data/assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import "./Header.module.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   const [show, setShow] = useState(true);
@@ -39,7 +39,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <div className={`header-container-wrap ${show ? "" : "hide"} `}>
+    <div className={`${styles.header} ${show ? "" : "hide"} `}>
       <div className="w-[40rem] sm:w-[100rem] flex items-center justify-between">
         <Image
           className="sm:w-[9.625rem] sm:h-[3.1875rem] sm:ml-20 sm:mt-6 w-[7.1875rem] h-[2.5625rem] ml-[1.22rem] mt-[2.62rem]"

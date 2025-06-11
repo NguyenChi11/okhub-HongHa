@@ -1,9 +1,10 @@
+import BannerHome from "./components/BannerHome/BannerHome";
 import "./globals.css"
 
 export default function Home() {
   return (
-    <div className="Home">
-      
-    </div>
+    <section className="Home">
+      <BannerHome/>
+    </section>
   );
 }
