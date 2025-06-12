@@ -39,8 +39,12 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <div className={`${styles.header} ${show ? "" : "hide"} `}>
-      <div className="w-[40rem] sm:w-[100rem] flex items-center justify-between">
+    <div className={`${styles.header}  `}>
+      <div
+        className={`${styles.width} flex items-center justify-between ${
+          show ? "" : `${styles.hide}`
+        }`}
+      >
         <Image
           className="sm:w-[9.625rem] sm:h-[3.1875rem] sm:ml-20 sm:mt-6 w-[7.1875rem] h-[2.5625rem] ml-[1.22rem] mt-[2.62rem]"
           src={assets.Logo}

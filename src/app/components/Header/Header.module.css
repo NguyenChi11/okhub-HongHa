@@ -10,13 +10,20 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.header.hide {
+.hide {
   transform: translateY(-100%);
   opacity: 0;
 }
 
-@media screen and (max-width: 640px) {
+.width{
+  width: 100rem;
+}
+
+@media screen and (max-width: 639.99px) {
   .header {
     width: 40rem;
   }
+  .width{
+    width: 40rem;
+  } 
 }

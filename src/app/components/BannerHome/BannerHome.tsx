@@ -63,8 +63,8 @@ const BannerHome = () => {
   const incrementPrivate = () => setPaxPrivate((prev) => prev + 1);
   const decrementPrivate = () => setPaxPrivate((prev) => Math.max(1, prev - 1));
   return (
-    <div className={`${styles.banner} `}>
-      <div className="sm:inline-flex sm:flex-col sm:items-center sm:gap-[0.75rem] sm:absolute sm:top-[17.75rem] sm:left-[27.5rem] hidden">
+    <div className={`${styles.banner}`}>
+      <div className={`inline-flex sm:flex-col sm:items-center sm:gap-[0.75rem] sm:absolute sm:top-[17.75rem] sm:left-[27.5rem] ${styles.hide}`}>
         <p className="text-[#fff] text-[1.125rem] font-extrabold leading-[100%] opacity-40">
           GET READY
         </p>
@@ -75,7 +75,7 @@ const BannerHome = () => {
           HA GIANG LOOP
         </h1>
       </div>
-      <div className="sm:flex items-center justify-center absolute bottom-[1.94rem] left-[22.44rem] p-[0.75rem_0.75rem_0.75rem_2rem] gap-[1.875rem] rounded-[0.75rem] bg-[#fff] hidden">
+      <div className={`flex items-center justify-center absolute bottom-[1.94rem] left-[22.44rem] p-[0.75rem_0.75rem_0.75rem_2rem] gap-[1.875rem] rounded-[0.75rem] bg-[#fff] ${styles.hide}`}>
         <div className="flex items-center gap-[1.5rem]">
           <div
             className="flex flex-col items-start gap-1 w-[10rem]"

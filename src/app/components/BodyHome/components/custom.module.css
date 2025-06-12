@@ -1,0 +1,240 @@
+.bodyContainer {
+  display: flex;
+}
+
+.container {
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.75rem;
+  height: 10.75rem;
+  flex-shrink: 0;
+  text-align: center;
+  stroke-width: 1.5px;
+  stroke: var(--greyscaletext-20, #a9a9a9);
+  border-radius: 50%;
+  border: 2px #a9a9a9 dashed;
+  margin: 0.87rem;
+  background-color: unset;
+  animation: rotate-center 2s linear infinite;
+  transition: background-color 0.4s ease;
+}
+
+.items {
+  color: var(--greyscaletext-0, #fff);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 1.05rem */
+  text-transform: uppercase;
+  width: 7.8rem;
+  position: absolute;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemsWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 2.25rem;
+  overflow: hidden;
+}
+
+.textItem {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 2.25rem;
+}
+
+.container:hover {
+  .circle {
+    background-color: rgba(230, 72, 40, 1);
+  }
+  .textWrap {
+    animation: text-scroll 0.4s ease forwards;
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2.25rem);
+  }
+}
+
+.svg path {
+  stroke: #da4b19;
+}
+
+.containerVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+  height: 48.75rem;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.containerTextVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+}
+
+.videoText {
+  color: var(--greyscaletext-0, #fff);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 1.125rem */
+  margin-bottom: 0.75rem;
+}
+
+.videoTitle {
+  color: var(--Green-Light, #e9f1ed);
+  font-family: "Londrina Solid";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 3.5rem */
+  margin-bottom: 13.56rem;
+}
+
+.videoImgTitle {
+  width: 26.9375rem;
+  position: absolute;
+  top: 2.625rem;
+  height: 15.0625rem;
+}
+
+.videoIframe {
+  border-radius: 1rem;
+  width: 53rem;
+  height: 29.8125rem;
+  flex-shrink: 0;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 639.99px) {
+  .bodyContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0.625rem;
+  }
+
+  .container {
+    width: 7.01663rem;
+    height: 6.01663rem;
+  }
+
+  .container_1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .container_2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .container_3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  .container_4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .container_5 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+
+  .circle {
+    width: 6.01663rem;
+    height: 6.01663rem;
+    flex-shrink: 0;
+    margin: 0.49rem 0.24rem;
+  }
+
+  .items {
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 0.6rem */
+    text-transform: uppercase;
+    width: 4.9375rem;
+    height: 6.01663rem;
+  }
+  .containerVideo {
+    width: 40rem;
+    height: 25.85rem;
+    bottom: 0;
+  }
+
+  .videoText {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 0.46638rem */
+    opacity: 0.4;
+  }
+
+  .videoTitle {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 1.451rem */
+    margin-bottom: 6rem;
+  }
+
+  .videoImgTitle {
+    top: 1.5rem;
+    width: 11.125rem;
+    height: 6rem;
+  }
+
+  .videoIframe {
+    width: 23.5rem;
+    height: 13.125rem;
+    flex-shrink: 0;
+    border-radius: 0;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    pointer-events: none;
+    object-fit: cover;
+  }
+}

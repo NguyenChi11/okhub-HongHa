@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import "./globals.css";
 import localFont from "next/font/local";
+import {Londrina_Solid} from 'next/font/google'
 
 const tripsSans = localFont({
   src: [
@@ -15,13 +16,19 @@ const tripsSans = localFont({
   display: "swap",
 });
 
+const Londrina = Londrina_Solid({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "900"], // tuỳ chọn
+  variable: "--font-londrina", // nếu muốn dùng CSS variable
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${tripsSans.variable}`}>
+    <html lang="en" className={`${tripsSans.variable} ${Londrina.className}`}>
       <body>
         <Header />
         {children}

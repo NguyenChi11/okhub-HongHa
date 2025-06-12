@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639.99px) {
   .banner {
     background: url("../../public/assets/images/Banner_mobile_1.png") no-repeat;
     background-size: cover;
@@ -17,5 +17,8 @@
     background-repeat: no-repeat;
     width: 40rem;
     height: 58.5rem;
+  }
+  .hide{
+    display: none;
   }
 }
