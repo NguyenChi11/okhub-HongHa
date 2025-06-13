@@ -1,0 +1,102 @@
+.containerWrap{
+    position: relative;
+    height: 53.37rem;
+    width: 100rem;
+    background: #fff;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  height: 44rem;
+}
+
+.img{
+    position: absolute;
+    z-index: 10;
+    top: -2rem;
+    left: 4rem;
+    width: 4.75rem;
+    height: 32.0625rem; 
+}
+
+.container{
+    position: absolute;
+    z-index: 5;
+    width: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.slider_1{
+    position: absolute;
+    width: 100rem;
+    left: 10rem;
+    border-radius: 1rem;
+}
+
+.slider_2{
+    position: absolute;
+    top: 22rem;
+    border-radius: 1rem;
+}
+
+.buttonWrap{
+    display: none;
+}
+
+
+@media screen and (max-width:639.99px) {
+    .containerWrap{
+        height: 60rem;
+        width: 40rem;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .container{
+        width: 40rem;
+        overflow: hidden;
+        align-items: flex-start;
+        margin-top: 1.625rem;
+    }
+    .slider_1{
+        left: 1rem;
+    }
+
+    .slider_2{
+        left: -5rem;
+    }
+
+    .buttonWrap{
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.75rem;
+    }
+
+    .buttonText{
+        display: flex;
+        width: 9.9375rem;
+        height: 3rem;
+        padding: 0.75rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--orange-normal-hover, #da4b19);
+        background: var(--orange-normal-hover, #da4b19);
+        color: #fff;
+    }
+}

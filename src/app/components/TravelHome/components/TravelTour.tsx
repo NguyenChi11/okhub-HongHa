@@ -9,7 +9,7 @@ import Image from "next/image";
 import { assets } from "@/app/public/assets/data/assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import type { StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image"; 
 
 type TravelTourProps = {
   onTourHover: (map: string | StaticImageData) => void;
