@@ -1,13 +1,13 @@
-import image_1 from "./image_1.png";
-import image_2 from "./image_2.png";
-import image_3 from "./image_3.png";
-import image_4 from "./image_4.png";
-import image_5 from "./image_5.png";
-import map_1 from "./map.png";
-import map_2 from "./map_2.png";
-import map_3 from "./map_3.png";
-import map_4 from "./map_4.png";
-import map_5 from "./map.png";
+import image_1 from "../images/image_1.png";
+import image_2 from "../images/image_2.png";
+import image_3 from "../images/image_3.png";
+import image_4 from "../images/image_4.png";
+import image_5 from "../images/image_5.png";
+import map_1 from "../images/map.png";
+import map_2 from "../images/map_2.png";
+import map_3 from "../images/map_3.png";
+import map_4 from "../images/map_4.png";
+import map_5 from "../images/map.png";
 
 export const travel_data = [
   {

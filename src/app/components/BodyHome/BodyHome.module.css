@@ -12,7 +12,7 @@
 @media screen and (max-width: 639.99px) {
     .container{
         width: 40rem;
-        height: 100rem;
+        height: 97rem;
         flex-direction: column;
         align-items: center;
         overflow-x: clip;

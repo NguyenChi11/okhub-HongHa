@@ -202,7 +202,7 @@
   .containerVideo {
     width: 40rem;
     height: 25.85rem;
-    bottom: 0;
+    bottom: -3.5rem;
   }
 
   .videoText {

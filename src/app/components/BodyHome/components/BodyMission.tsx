@@ -92,14 +92,14 @@ const BodyMission = ({ text, title, description }: BodyMissionProps) => {
   ];
   return (
     <div className="flex sm:w-[100rem] w-[40rem] justify-between flex-shrink-0 relative overflow-x-clip">
-      <div className=" w-[40rem] sm:w-full sm:ml-[6.75rem] sm:mt-[3.44rem] mt-[2.8rem] ml-[1rem] mr-[1rem]">
+      <div className=" w-[40rem] sm:w-full sm:ml-[6.75rem] sm:mt-[3.44rem] mt-[1.8rem] ml-[1rem] mr-[1rem]">
         <p className="sm:hidden block text-[#fff] text-[0.875rem] not-italic font-extrabold leading-[120%] tracking-[0.00875rem] opacity-40 mb-[0.81rem]">
           {text}
         </p>
-        <h1 className="text-white font-['Londrina_Solid'] sm:text-[3.5rem] font-black leading-[100%] mt-[1.88rem]  sm:w-full w-[29rem] text-[4.5rem]">
+        <h1 className="text-white font-['Londrina_Solid'] sm:text-[3.5rem] font-black leading-[100%] mt-[1.88rem]  sm:w-full w-[29rem] text-[4rem]">
           {title}
         </h1>
-        <p className=" w-[38.8125rem]   sm:h-[4.5rem] h-[6.5625rem]  text-[#c5c5c5] font-['Trips_Sans'] text-base font-normal leading-[1.5rem] tracking-[0.005rem] sm:mt-[3.5rem] mt-[1.875rem] ">
+        <p className=" w-[38.8125rem]   sm:h-[4.5rem] h-[6.5625rem]  text-[#c5c5c5] text-base font-normal leading-[1.5rem] tracking-[0.005rem] sm:mt-[3.5rem] mt-[1.875rem] ">
           {description}
         </p>
         <div className="mt-4 flex flex-col items-start gap-3">
@@ -141,7 +141,7 @@ const BodyMission = ({ text, title, description }: BodyMissionProps) => {
           <image
             className="w-[8.78538rem] h-[7.5rem] -rotate-[61.927]"
             ref={iconRef}
-            href={`${assets.motobike}`}
+            href={`${assets.motobike.src}`}
           />
         </svg>
       </div>
