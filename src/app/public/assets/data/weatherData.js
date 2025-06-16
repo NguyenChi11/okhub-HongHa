@@ -1,14 +1,14 @@
-import image_weather_1 from "./weather_1.jpeg";
-import image_weather_2 from "./weather_2.jpeg";
-import image_weather_3 from "./weather_3.jpeg";
-import image_weather_4 from "./weather_4.jpeg";
-import image_weather_5 from "./weather_5.jpeg";
+import image_weather_1 from "../images/weather_1.jpeg";
+import image_weather_2 from "../images/weather_2.jpeg";
+import image_weather_3 from "../images/weather_3.jpeg";
+import image_weather_4 from "../images/weather_4.jpeg";
+import image_weather_5 from "../images/weather_5.jpeg";
 
-import icon_weather_1 from "./icon_weaether_1.png";
-import icon_weather_2 from "./icon_weaether_2.png";
-import icon_weather_3 from "./icon_weaether_3.png";
+import icon_weather_1 from "../images/icon_weaether_1.png";
+import icon_weather_2 from "../images/icon_weaether_2.png";
+import icon_weather_3 from "../images/icon_weaether_3.png";
 
-import icon_rain from "./RAIN.png";
+import icon_rain from "../images/RAIN.png";
 
 export const weather_data = [
   {

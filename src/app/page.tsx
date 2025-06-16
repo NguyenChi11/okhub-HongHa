@@ -2,6 +2,7 @@
 
 import BannerHome from "./components/BannerHome/BannerHome";
 import BodyHome from "./components/BodyHome/BodyHome";
+import CloudAnimation from "./components/CloudAnimation/CloudAnimation";
 import ReviewHome from "./components/ReviewHome/ReviewHome";
 import SliderHome from "./components/SliderHome/SliderHome";
 import TravelHome from "./components/TravelHome/TravelHome";
@@ -15,6 +16,7 @@ export default function Home() {
       <TravelHome />
       <SliderHome/>
       <ReviewHome/>
+      <CloudAnimation/>
     </section>
   );
 }
