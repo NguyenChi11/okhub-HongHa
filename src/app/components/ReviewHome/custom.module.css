@@ -1,0 +1,12 @@
+.container{
+    background: url("../../public/assets/images/Review.png") no-repeat;
+    width: 100rem;
+    height: 106.0625rem;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width:639.99px){
+    .container{
+        width: 40rem;
+    }
+}

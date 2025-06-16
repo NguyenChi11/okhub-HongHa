@@ -1,9 +1,9 @@
-import image_tour_guide_1 from "./tour-guide-1.jpeg";
-import image_tour_guide_2 from "./tour-guide-2.jpeg";
-import image_tour_guide_3 from "./tour-guide-3.jpeg";
-import image_tour_guide_4 from "./tour-guide-4.jpeg";
-import image_tour_guide_5 from "./tour-guide-5.jpeg";
-import image_tour_guide_6 from "./tour-guide-6.jpeg";
+import image_tour_guide_1 from "../images/tour-guide-1.jpeg";
+import image_tour_guide_2 from "../images/tour-guide-2.jpeg";
+import image_tour_guide_3 from "../images/tour-guide-3.jpeg";
+import image_tour_guide_4 from "../images/tour-guide-4.jpeg";
+import image_tour_guide_5 from "../images/tour-guide-5.jpeg";
+import image_tour_guide_6 from "../images/tour-guide-6.jpeg";
 
 export const tourGuide_data = [
   {

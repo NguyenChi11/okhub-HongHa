@@ -1,9 +1,9 @@
-import avatar_Cmt from "./avatar_comment.png";
-import image_1 from "./image_1.png";
-import image_2 from "./image_2.png";
-import image_3 from "./image_3.png";
-import image_4 from "./image_4.png";
-import image_5 from "./image_5.png";
+import avatar_Cmt from "../images/avatar_comment.png";
+import image_1 from "../images/image_1.png";
+import image_2 from "../images/image_2.png";
+import image_3 from "../images/image_3.png";
+import image_4 from "../images/image_4.png";
+import image_5 from "../images/image_5.png";
 
 export const comment_data = [
   {

@@ -1,0 +1,21 @@
+.splide__arrow svg {
+    display: none;
+  }
+  
+  /* Mũi tên trái */
+  .splide__arrow--prev {
+    background: url("../../../public/assets/images/Arrow-left.png") no-repeat center center !important;
+    background-size: contain;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    left: -3.75rem !important;
+  }
+  
+  /* Mũi tên phải */
+  .splide__arrow--next {
+    background: url("../../../public/assets/images/Arrow-right.png") no-repeat center center !important;
+    background-size: contain;
+    right: 36.75rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
