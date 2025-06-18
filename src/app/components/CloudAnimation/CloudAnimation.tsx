@@ -153,7 +153,7 @@ const CloudAnimation = () => {
                 slidesPerView: 4,
                 slidesPerGroup: 1,
               },
-              639: {
+              640: {
                 slidesPerView: 12,
                 slidesPerGroup: 1,
               },
