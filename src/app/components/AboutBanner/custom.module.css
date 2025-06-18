@@ -1,0 +1,61 @@
+.container {
+  width: 100rem;
+  height: 50rem;
+  background: #fff;
+  position: relative;
+}
+
+.BgrBanner {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+.SunBanner {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  left: 5rem;
+}
+
+.title {
+  width: 65.8125rem;
+  color: var(--Grey-Green-Normal, #122718);
+  font-family: "Londrina Solid";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 3.5rem */
+  position: absolute;
+  z-index: 2;
+  top: 6.5rem;
+  left: 5rem;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 639.99px){
+  .container {
+    width: 40rem;
+    height: 50rem;
+    background: #fff;
+    position: relative;
+  }
+
+  .title{
+    width: 38rem;
+    color: var(--Grey-Green-Normal, #122718);
+    font-family: "Londrina Solid";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3.5rem */
+    position: absolute;
+    z-index: 2;
+    top: 10rem;
+    left: 1rem;
+    opacity: 0.8;
+    text-align: center;
+  }
+}
