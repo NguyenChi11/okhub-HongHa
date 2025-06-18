@@ -1,0 +1,268 @@
+.container{
+    width: 100rem;
+    background-image: url("../../public//assets/images/background-footer.png") no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 33.75rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.bgrFooter{
+    width: 100rem;
+    height: 33.75rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.logoImage{
+    width: 13.875rem;
+    height: 4.875rem;
+    flex-shrink: 0;
+}
+
+.contactContainerWrap{
+    display: flex;
+    width: 59.6875rem;
+    align-items: flex-start;
+    gap: 7.5rem;
+    margin-top: 2.81rem;
+    margin-left: 1.25rem;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contactTitle{
+    color: var(--Gray-Scale-80, #2e2e2e);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+}
+
+.contactTextWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contactText{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.iconFooter{
+    color: rgba(230, 72, 39, 1);
+}
+
+.footerText{
+    color: var(--greyscaletext-40, #6a6a6a);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+}
+
+.tourGuide{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tourGuideImg{
+    width: 1.09863rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.tourGuideText{
+    color: var(--greyscaletext-40, #6a6a6a);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+}
+
+.socialContainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2.44rem;
+    margin-left: 1.25rem;
+}
+
+.socialImage{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.socialImg{
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.containerImage{
+    position: absolute;
+    right: -1rem;
+    top: 1rem;
+    width: 76.37106rem;
+    height: 32.37575rem;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.containerImg{
+    width: 76.37106rem;
+    height: 32.37575rem;
+}
+
+@media screen and (max-width:639.99px) {
+    .container{
+        width: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bgrFooter{
+        width: 40rem;
+        height: 16rem;
+        top: 1rem;
+    }
+
+    .containerContent{
+        margin: 0;
+        margin-left: 0.625rem;
+    }
+
+    .logoImage{
+        width: 7.8845rem;
+        height: 2.772rem;
+        flex-shrink: 0;
+    }
+
+    .contactContainerWrap{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .contactContainer{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactTitle{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%; /* 1.2rem */
+        letter-spacing: 0.0125rem;
+    }
+
+    .contactTextWrap{
+        gap: 1rem;
+    }
+
+    .contactText{
+        gap: 0.5rem;
+        width: 19.5625rem;
+        font-size: 1rem;
+    }
+
+    .iconFooter{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .tourGuide{
+        gap: 0.5rem;
+    }
+
+    .tourGuideImg{
+        width: 1.09863rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .tourGuideText{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 1.2rem */
+        letter-spacing: 0.0125rem;
+    }
+
+    .socialContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .socialImage{
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .socialImg{
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem
+    }
+
+    .containerImage{
+        flex-shrink: 0;
+        width: 52.5rem;
+        height: 22.5rem;
+        top: 6rem;
+        right: 0;
+    }
+
+    .containerImg{
+        width: 52.5rem;
+        flex-shrink: 0;
+        height: 22.5rem;
+    }
+}

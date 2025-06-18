@@ -37,7 +37,8 @@ import tiktokFooter from "../images/tiktok-footer.png";
 import youtubeFooter from "../images/youtube-footer.png";
 import userFooter from "../images/user-footer.png";
 import motobike from "../images/motobike.png";
-import banner from "../images/Banner_1.png"
+import banner from "../images/Banner_1.png";
+import footer from "../images/background-footer.png";
 
 export const assets = {
   Logo,
@@ -79,7 +80,8 @@ export const assets = {
   youtubeFooter,
   tiktokFooter,
   motobike,
-  banner
+  banner,
+  footer
 };
 
 export const cloudImages = [

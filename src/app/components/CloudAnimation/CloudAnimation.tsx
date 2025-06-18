@@ -1,9 +1,9 @@
-
 import styles from "./custom.module.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -14,8 +14,7 @@ import { weather_data } from "@/app/public/assets/data/weatherData";
 import Image from "next/image";
 
 const CloudAnimation = () => {
-  const cloudRefs = useRef([]);
-
+  const cloudRefs = useRef<HTMLDivElement[]>([]);
   useEffect(() => {
     cloudRefs.current.forEach((cloud, index) => {
       let direction = -1; // bắt đầu từ phải qua trái
@@ -53,10 +52,10 @@ const CloudAnimation = () => {
     });
   }, []);
 
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const prevRef = useRef<HTMLDivElement>(null);
+  const nextRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className={`${styles.container}`}>
@@ -65,9 +64,12 @@ const CloudAnimation = () => {
           {cloudImages.concat(cloudImages).map((src, i) => (
             <Image
               key={i}
-              ref={(el) => (cloudRefs.current[i] = el)}
+              ref={(el) => {
+                if (el) cloudRefs.current[i] = el;
+              }}
               src={src.image}
               className={`${styles.cloud}`}
+              alt=""
             />
           ))}
         </div>
@@ -79,12 +81,19 @@ const CloudAnimation = () => {
             spaceBetween={10}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Navigation, Thumbs]}
+            navigation={true}
             onInit={(swiper) => {
-              // Gắn phần tử DOM sau khi Swiper đã khởi tạo
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
-              swiper.navigation.init();
-              swiper.navigation.update();
+              if (
+                swiper.params.navigation &&
+                typeof swiper.params.navigation !== "boolean" &&
+                prevRef.current &&
+                nextRef.current
+              ) {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+                swiper.navigation.init();
+                swiper.navigation.update();
+              }
             }}
             slidesPerView={1}
             className={`${styles.cloudWeatherBgrItems}`}
@@ -132,7 +141,7 @@ const CloudAnimation = () => {
         </div>
         <div className={`${styles.cloudWeatherInfoContainer}`}>
           <Swiper
-            onSwiper={setThumbsSwiper}
+            onSwiper={(swiper) => setThumbsSwiper(swiper)}
             loop={true}
             spaceBetween={2}
             slidesPerView={12}

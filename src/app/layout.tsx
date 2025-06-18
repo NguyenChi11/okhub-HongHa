@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import "./globals.css";
 import localFont from "next/font/local";
 import {Londrina_Solid} from 'next/font/google'
+import Footer from "./components/Footer/Footer";
 
 const tripsSans = localFont({
   src: [
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
