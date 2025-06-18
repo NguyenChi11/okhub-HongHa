@@ -9,7 +9,7 @@ import styles from "./custom.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const BodyVideo = () => {
-  const imgRef = useRef(null);
+  const imgRef = useRef<HTMLIFrameElement | null>(null);
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const BodyVideo = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !loaded) {
-          imgRef.current.src =
+          imgRef.current!.src =
             "https://www.youtube.com/embed/K4j4FR5tUtU?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playlist=K4j4FR5tUtU";
           setLoaded(true);
         }
