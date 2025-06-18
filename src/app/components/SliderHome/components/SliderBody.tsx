@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Splide as SplideInstance } from "@splidejs/react-splide";
+// import { Splide as SplideInstance } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import Image from "next/image";
 import styles from "./custom.module.css";
@@ -15,7 +15,7 @@ type Props = {
 };
 
 const SliderBody = ({ slider }: Props) => {
-  const splideRef = useRef<{ splide: SplideInstance } | null>(null);
+  const splideRef = useRef<{ splide: typeof Splide } | null>(null);
 
   useEffect(() => {
     const splide = splideRef.current?.splide;
@@ -25,7 +25,7 @@ const SliderBody = ({ slider }: Props) => {
       let movedSlides = 0;
 
       splide.on("move", () => {
-        movedSlides++;
+          movedSlides++;
         if (movedSlides >= totalSlides) {
           splide.Components.AutoScroll.pause();
         }
