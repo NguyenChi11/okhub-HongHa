@@ -94,7 +94,8 @@
   bottom: 39.375rem;
 }
 
-.textRight, .textLeft {
+.textRight,
+.textLeft {
   font-size: 7.5rem;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +111,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.descriptionRight, .descriptionLeft {
+.descriptionRight,
+.descriptionLeft {
   color: var(--greyscaletext-0, #fff);
   font-size: 1.125rem;
   font-style: normal;
@@ -135,4 +137,73 @@
   z-index: 4;
   bottom: 17.125rem;
   left: 6.75rem;
+}
+
+.descriptionLast {
+  color: var(--greyscaletext-0, #fff);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.005rem;
+  position: absolute;
+  display: flex;
+  text-align: end;
+  z-index: 4;
+  width: 38.0625rem;
+  bottom: 13rem;
+  right: 9rem;
+}
+
+@media screen and (max-width: 639.99px) {
+  .container {
+    width: 40rem;
+    height: 85rem;
+  }
+  .titleContainer {
+    margin-left: 1.25rem;
+  }
+
+  .title {
+    margin-top: 16.69rem;
+    width: 36rem;
+    height: 13.1875rem;
+  }
+  .description {
+    width: 22rem;
+    line-height: 130%;
+  }
+
+  .mapAbout {
+    top: 10rem;
+    right: -16rem;
+    width: 73rem;
+    height: 100rem;
+  }
+
+  .btnWrap{
+    display: none;
+  }
+
+  .descriptionLast{
+    display: none;
+  }
+
+  .textLeft, .textRight{
+    font-size: 4.5rem;
+  }
+
+  .descriptionLeft, .descriptionRight{
+    font-size: 0.6rem;
+  }
+
+  .textRightWrap{
+    bottom: 22.375rem;
+    right: 8.5rem;
+  }
+
+  .textLeftWrap{
+    bottom: 7.125rem;
+    left: 1.75rem;
+  }
 }

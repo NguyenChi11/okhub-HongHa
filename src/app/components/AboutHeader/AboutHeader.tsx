@@ -5,7 +5,13 @@ import { assets } from "@/app/public/assets/data/assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const AboutHeader = () => {
+
+interface AboutHeaderProps {
+  text1: string;
+  text2: string;
+}
+
+const AboutHeader = ({text1,text2}: AboutHeaderProps) => {
   return (
     <div className={`${styles.container}`}>
       <Image className={`${styles.aboutImg}`} src={assets.about} alt="" />
@@ -14,11 +20,7 @@ const AboutHeader = () => {
       <div className={`${styles.titleContainer}`}>
         <Image className={`${styles.title}`} src={assets.imageAbout} alt="" />
         <p className={`${styles.description}`}>
-          Ha Giang, nestled in the rugged mountains of northern Vietnam, beckons
-          adventurers with its breathtaking scenery and vibrant cultural
-          tapestry. From the towering peaks of the Dong Van Karst Plateau to the
-          winding roads of the Ma Pi Leng Pass, Ha Giang offers an unforgettable
-          journey through some of Vietnams most awe-inspiring landscapes.
+          {text1}
         </p>
         <div className={`${styles.btnWrap}`}>
           <button className={`${styles.btnLeft}`}>
@@ -38,6 +40,9 @@ const AboutHeader = () => {
         <p className={`${styles.textLeft}`}>13 YEAR</p>
         <p className={`${styles.descriptionLeft}`}>Experience</p>
       </div>
+      <p className={`${styles.descriptionLast}`}>
+        {text2}
+      </p>
     </div>
   );
 };
