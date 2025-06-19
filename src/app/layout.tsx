@@ -16,7 +16,13 @@ const tripsSans = localFont({
     // Thêm các biến thể khác
   ],
   variable: "--font-trips-sans",
+  display: "swap",  
+});
+
+const angelBoos = localFont({
+  src: "./fonts/Angel-Boos-Regular.otf",
   display: "swap",
+  variable: "--font-angel-boos",
 });
 
 const Londrina = Londrina_Solid({
@@ -31,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${tripsSans.variable} ${Londrina.className}`}>
+    <html lang="en" className={`${tripsSans.variable} ${Londrina.className} ${angelBoos.variable}`}>
       <body>
         <Header />
         {children}

@@ -1,0 +1,359 @@
+.tourGuideContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background: #fff; */
+  }
+  
+  .tourGuideItemTags{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.25rem;
+    margin-top: 0.75rem;
+    margin-right: 6.25rem;
+    margin-bottom: 2.56rem;
+  }
+  
+  .tourGuideTag{
+    color: var(--greyscaletext-10, #c5c5c5);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .tourGuideTag.action{
+    color: var(--Orange-Normal, #e64827);
+  }
+  
+  .tourContainerItems{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100rem;
+    overflow: hidden;
+    
+  }
+  /*  */
+  .tourContainerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.125rem;
+    margin-left: 5rem;
+  }
+  
+  .tourTitleHeaderWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    opacity: 0.9;
+  }
+  
+  .tourTitleHeader{
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 1.125rem */
+    opacity: 0.4;
+  }
+  
+  .tourTitle{
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Londrina Solid";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 3.5rem */
+  }
+  
+  .tourDescription{
+    width: 25.0625rem;
+    color: var(--greyscaletext-80-main, #262626);
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.05rem */
+    letter-spacing: 0.00875rem;
+    opacity: 0.5;
+  }
+  
+  .tourButtonWrap{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .tourButton1{
+    display: flex;
+    height: 2.75rem;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--orange-normal-hover, #da4b19);
+    background: var(--orange-normal-hover, #da4b19);
+    color: var(--greyscaletext-0, #fff);
+    text-align: center;
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+  }
+  
+  .tourButton2{
+    display: flex;
+    height: 2.75rem;
+    padding: 0.625rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Orange-Normal, #E64827);
+    opacity: 0.6;
+    color: var(--Orange-Normal, #E64827);
+    text-align: center;
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    background: unset;
+  }
+  
+  /*  */
+  
+  .tourItems{
+    width: 100rem;
+    margin-left: 3.75rem;
+  }
+  
+  .tourItem{
+    display: flex;
+    width: 17.6875rem;
+    height: 28.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 90px 128px 44px 0px rgba(66, 72, 66, 0.00), 57px 82px 40px 0px rgba(66, 72, 66, 0.01), 32px 46px 34px 0px rgba(66, 72, 66, 0.05), 14px 20px 25px 0px rgba(66, 72, 66, 0.09), 4px 5px 14px 0px rgba(66, 72, 66, 0.10);
+  }
+  
+  .tourImgWrap{
+    width: 100%;
+    height: 21.8375rem;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tourImgItem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2rem;
+  }
+  
+  .tourInfo{
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+    top: 1rem;
+  }
+  
+  .tourName{
+    color: var(--Orange-Normal, #e64827);
+    text-align: center;
+    font-family: "Trips Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: 0.0125rem;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+  }
+  
+  .tourInfoWrap{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+    justify-content: center;
+  }
+  
+  .tourProfession,.tourExp{
+    color: var(--greyscaletext-80-main, #262626);
+    text-align: center;
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.05rem */
+    letter-spacing: 0.00875rem;
+  }
+  
+  .tourCircle{
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: #262626;
+  }
+  
+  .tourTextItem{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: translateY(1.25rem);
+    margin-top: 0.5rem;
+    color: var(--greyscaletext-80-main, #262626);
+    text-align: center;
+    font-family: "Trips Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.05rem */
+    letter-spacing: 0.00875rem;
+  }
+  
+  .tourItem:hover .tourImgWrap {
+    transform: scale(1) translateY(-4rem);
+  }
+  
+  
+  .tourItem:hover .tourName,
+  .tourItem:hover .tourInfoWrap {
+    transform: translateY(-4rem);
+    opacity: 1;
+  }
+  
+  .tourItem:hover .tourTextItem {
+    max-width: 16.5rem;
+    max-height: 5rem;
+    text-align: start;
+    opacity: 1;
+    transform: translateY(-4rem);
+    overflow-y: auto;
+  }
+
+
+  @media screen and (max-width:639.99px){
+    .tourGuideContainer{
+        width: 40rem;
+      }
+    
+      .tourGuideItemTags{
+        display: none;
+      }
+    
+      .tourContainerItems{
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .tourContainerContent{
+        margin-left: 1rem;
+        gap: 1rem;
+      }
+    
+      .tourTitleHeader{
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%; /* 1.05rem */
+      }
+    
+      .tourTitle{
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 120%; /* 3rem */
+      }
+    
+      .tourDescription{
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 1.3125rem */
+        letter-spacing: 0.00219rem;
+        width: 38.0625rem;
+      }
+    
+      .tourButtonWrap{
+        width: 38.5rem;
+        margin-bottom: 1rem;
+      }
+    
+      .tourButton1{
+        display: flex;
+        height: 2.75rem;
+        padding: 0.625rem 1.25rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1 0 0;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 1.05rem */
+        text-transform: uppercase;
+      }
+    
+      .tourButton2{
+        display: flex;
+        height: 2.75rem;
+        padding: 0.625rem 1.25rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 1 0 0;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 1.05rem */
+        text-transform: uppercase;
+      }
+    
+      .tourItems{
+        margin-left: 1.125rem;
+      }
+    
+      .tourItem{
+        display: flex;
+        width: 17.6875rem;
+        height: 26rem;
+        padding-bottom: 0.41844rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        flex-shrink: 0;
+      }
+    
+      .tourImgWrap{
+        height: 19.8375rem;
+      }
+  }

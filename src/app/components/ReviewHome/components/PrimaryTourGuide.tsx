@@ -1,24 +1,27 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
-import styles from "./custom.module.css";
+import styles from "./PrimaryTourGuide.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { riderTeam_data, tourGuide_data } from "../../../public/assets/data/tour-guide";
+import {
+  riderTeam_data,
+  tourGuide_data,
+} from "../../../public/assets/data/tour-guide";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import "./TourGuide.css"
+import "./TourGuide.css";
 
 interface TourGuideProps {
   text: string;
   title: string;
   description: string;
 }
-const TourGuide = ({ text, title, description }:TourGuideProps) => {
+const PrimaryTourGuide = ({ text, title, description }: TourGuideProps) => {
   const [selected, setSelected] = useState("tour-guide");
 
-  const handleSelect = (type :string) => {
+  const handleSelect = (type: string) => {
     setSelected(type);
   };
 
@@ -106,4 +109,4 @@ const TourGuide = ({ text, title, description }:TourGuideProps) => {
   );
 };
 
-export default TourGuide;
+export default PrimaryTourGuide;

@@ -39,6 +39,13 @@ import userFooter from "../images/user-footer.png";
 import motobike from "../images/motobike.png";
 import banner from "../images/Banner_1.png";
 import footer from "../images/background-footer.png";
+import about from "../images/about.png";
+import bgrAbout from "../images/background-about.png";
+import imageAbout from "../images/imageAbout.png";
+import mapAbout from "../images/map-About.png";
+import AboutBgrSection from "../images/About-bgr-section.png";
+import AboutSun from "../images/sun-about.png";
+import imageAbout1 from "../images/imageAbout1.png"
 
 export const assets = {
   Logo,
@@ -81,7 +88,14 @@ export const assets = {
   tiktokFooter,
   motobike,
   banner,
-  footer
+  footer,
+  about,
+  bgrAbout,
+  imageAbout,
+  mapAbout,
+  AboutBgrSection,
+  AboutSun,
+  imageAbout1
 };
 
 export const cloudImages = [

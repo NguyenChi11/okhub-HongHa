@@ -193,6 +193,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
+  /* background: #fff; */
 }
 
 .tourGuideItemTags{
@@ -226,8 +227,9 @@
   justify-content: space-between;
   width: 100rem;
   overflow: hidden;
+  
 }
-
+/*  */
 .tourContainerContent{
   display: flex;
   flex-direction: column;
@@ -322,6 +324,8 @@
   background: unset;
 }
 
+/*  */
+
 .tourItems{
   width: 100rem;
   margin-left: 3.75rem;
@@ -339,6 +343,7 @@
   position: relative;
   border-radius: 1.5rem;
   background: #fff;
+  box-shadow: 90px 128px 44px 0px rgba(66, 72, 66, 0.00), 57px 82px 40px 0px rgba(66, 72, 66, 0.01), 32px 46px 34px 0px rgba(66, 72, 66, 0.05), 14px 20px 25px 0px rgba(66, 72, 66, 0.09), 4px 5px 14px 0px rgba(66, 72, 66, 0.10);
 }
 
 .tourImgWrap{
