@@ -1,0 +1,60 @@
+.container {
+  width: 100rem;
+  height: 37.43231rem;
+  flex-shrink: 0;
+  position: relative;
+  background: #fff;
+  overflow-x: clip;
+}
+
+.svgContainer {
+  position: absolute;
+  width: 100%;
+  overflow: visible;
+  top: -12rem;
+}
+
+.svgImage {
+  width: 100rem;
+  height: 49.625rem;
+}
+
+.dot {
+  position: absolute;
+  width: 4.4375rem;
+  height: 3.75rem;
+  transform: translate(-50%, -51%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.titleContainer {
+  position: absolute;
+  z-index: 5;
+  top: -4rem;
+}
+
+.titleWrapRight {
+    width: 41.875rem;
+    height: 26.375rem;
+    margin-top: 6.875rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 639.99px) {
+  .container {
+    width: 40rem;
+    height: 62rem;
+  }
+
+  .svgContainer {
+    top: -2rem;
+  }
+
+  .titleContainer {
+    top: 0rem;
+    flex-direction: column;
+  }
+}

@@ -3,6 +3,7 @@ import styles from "./custom.module.css"
 import AboutHeader from '../components/AboutHeader/AboutHeader'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import AboutBanner from '../components/AboutBanner/AboutBanner'
+import AboutAnimation from '../components/AboutAnimation/AboutAnimation'
 
 const page = () => {
 
@@ -15,11 +16,19 @@ const page = () => {
     text1:
       "Explore the rugged beauty of Ha Giang on our thrilling motorcycle tours. Feel the wind in your hair as you navigate through twisting mountain roads and remote villages, soaking in the breathtaking scenery of towering peaks and lush valleys. Our experienced guides will lead you on an unforgettable adventure",
   };
+
+  const TextAboutAnimation = {
+    text1: "HONG HA TRAVEL",
+    title1: "ETHICAL COMMITMENTS",
+    description:
+      "At our Ha Giang tourism company, we adhere to a set of ethical guidelines that guide our operations and define our commitment to responsible tourism. Our foremost principle is to respect and preserve the natural environment and cultural heritage of Ha Giang. We prioritize sustainable practices to minimize our ecological footprint and actively engage in conservation efforts. Furthermore, we deeply value the communities we operate in and strive to foster positive relationships with local residents. We prioritize their well-being and economic empowerment through fair employment practices and community development initiatives. Additionally, we prioritize the safety and satisfaction of our guests, ensuring that every experience with us is both enjoyable and enriching",
+  };
   return (
     <div className={`${styles.container}`}>
         <AboutHeader text1={textAbout.text1} text2={textAbout.text2}/>
         <Breadcrumb/>
         <AboutBanner text={TextBannerAbout.text1}/>
+        <AboutAnimation text={TextAboutAnimation.text1} title={TextAboutAnimation.title1} description={TextAboutAnimation.description}/>
     </div>
   )
 }

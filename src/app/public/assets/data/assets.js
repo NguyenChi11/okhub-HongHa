@@ -45,6 +45,7 @@ import imageAbout from "../images/imageAbout.png";
 import mapAbout from "../images/map-About.png";
 import AboutBgrSection from "../images/About-bgr-section.png";
 import AboutSun from "../images/sun-about.png";
+import imageAbout1 from "../images/imageAbout1.png"
 
 export const assets = {
   Logo,
@@ -93,7 +94,8 @@ export const assets = {
   imageAbout,
   mapAbout,
   AboutBgrSection,
-  AboutSun
+  AboutSun,
+  imageAbout1
 };
 
 export const cloudImages = [
