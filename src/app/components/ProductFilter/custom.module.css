@@ -1,0 +1,148 @@
+.container {
+  width: 100rem;
+  border-radius: 1.5rem;
+  background: var(--BACKGROUND-ELEVATION-30, #f0f0f0);
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.optionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  color: gray;
+  display: flex;
+  padding: 1.9375rem 1.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  background: var(--greyscaletext-0, #fff);
+  width: 20.75rem;
+  height: 14.8125rem;
+  margin-top: 4.19rem;
+  margin-left: 5rem;
+}
+
+.optionTitle {
+  color: var(--greyscaletext-80-main, #262626);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+
+.hr {
+  width: 17rem;
+  height: 0.0625rem;
+  background: #9b7878;
+}
+
+.optionWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  align-self: stretch;
+}
+
+.optionCheckbox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.optionLabel {
+  color: var(--greyscaletext-80-main, #262626);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.05rem */
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  right: 0;
+  gap: 1rem;
+  margin-top: 4.19rem;
+  margin-right: 5rem;
+}
+
+.productItem {
+  width: 21.375rem;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-bottom: 2rem;
+}
+
+.optionContainerMobile {
+  display: none;
+}
+
+@media screen and (max-width: 639.99px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+  }
+
+  .optionContainer {
+    display: none;
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+
+  .optionContainerMobile {
+    display: block;
+  }
+
+  .optionMobileWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+  }
+
+  .optionMobileTitle {
+    color: var(--greyscaletext-30, #828282);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.05rem */
+  }
+
+  .optionMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .optionIconMenu {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #e64827;
+  }
+
+  .optionTitleMenu {
+    color: var(--greyscaletext-80-main, #262626);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 1.05rem */
+  }
+}
