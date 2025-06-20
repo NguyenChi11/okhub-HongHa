@@ -45,7 +45,10 @@ import imageAbout from "../images/imageAbout.png";
 import mapAbout from "../images/map-About.png";
 import AboutBgrSection from "../images/About-bgr-section.png";
 import AboutSun from "../images/sun-about.png";
-import imageAbout1 from "../images/imageAbout1.png"
+import imageAbout1 from "../images/imageAbout1.png";
+import BannerAllTour from "../images/Banner-all-tour.png"
+import mapAllTour from "../images/map-all-tour.png";
+import titleAllTour from "../images/title-banner-all-tour.png";
 
 export const assets = {
   Logo,
@@ -95,7 +98,10 @@ export const assets = {
   mapAbout,
   AboutBgrSection,
   AboutSun,
-  imageAbout1
+  imageAbout1,
+  BannerAllTour,
+  mapAllTour,
+  titleAllTour
 };
 
 export const cloudImages = [

@@ -19,7 +19,7 @@ export const travel_data = [
     tour_Group: "01 Tour guide with good English",
     transport: "Xe VIP, có trung chuyển",
     time: "4 Days 5 Nights",
-    price: "$199",
+    price: 199,
     map: map_1,
   },
   {
@@ -31,7 +31,7 @@ export const travel_data = [
     tour_Group: "01 Tour guide with good English",
     transport: "Xe VIP, có trung chuyển",
     time: "4 Days 5 Nights",
-    price: "$199",
+    price: 199,
     map: map_2,
   },
   {
@@ -43,7 +43,7 @@ export const travel_data = [
     tour_Group: "01 Tour guide with good English",
     transport: "Xe VIP, có trung chuyển",
     time: "4 Days 5 Nights",
-    price: "$199",
+    price: 199,
     map: map_3,
   },
   {
@@ -55,7 +55,7 @@ export const travel_data = [
     tour_Group: "01 Tour guide with good English",
     transport: "Xe VIP, có trung chuyển",
     time: "4 Days 5 Nights",
-    price: "$199",
+    price: 199,
     map: map_4,
   },
   {
@@ -67,7 +67,7 @@ export const travel_data = [
     tour_Group: "01 Tour guide with good English",
     transport: "Xe VIP, có trung chuyển",
     time: "4 Days 5 Nights",
-    price: "$199",
+    price: 199,
     map: map_5,
   },
 ];

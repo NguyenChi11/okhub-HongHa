@@ -12,6 +12,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { assets, cloudImages } from "@/app/public/assets/data/assets";
 import { weather_data } from "@/app/public/assets/data/weatherData";
 import Image from "next/image";
+import "./CloudAnimation.css"
 
 const CloudAnimation = () => {
   const cloudRefs = useRef<HTMLDivElement[]>([]);

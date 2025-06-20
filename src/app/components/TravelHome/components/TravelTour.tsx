@@ -125,13 +125,13 @@ const TravelTour = ({ onTourHover, onTourLeave }: TravelTourProps) => {
                 </div>
                 <div className={`${styles.mobilePriceContainer}`}>
                   <div className={`${styles.mobileItemsPrice}`}>
-                    <p className={`${styles.mobilePrice}`}>{item.price}</p>
+                    <p className={`${styles.mobilePrice}`}>${item.price}</p>
                     <p className={`${styles.mobileTextPrice}`}>
                       Self - Driving
                     </p>
                   </div>
                   <div className={`${styles.mobileItemsPrice}`}>
-                    <p className={`${styles.mobilePrice}`}>{item.price}</p>
+                    <p className={`${styles.mobilePrice}`}>${item.price}</p>
                     <p className={`${styles.mobileTextPrice}`}>Local driver</p>
                   </div>
                 </div>
