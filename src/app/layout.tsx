@@ -1,10 +1,9 @@
-
-
 import Header from "./components/Header/Header";
 import "./globals.css";
 import localFont from "next/font/local";
-import {Londrina_Solid} from 'next/font/google'
+import { Londrina_Solid } from "next/font/google";
 import Footer from "./components/Footer/Footer";
+import { ThemeProvider } from "./components/ThemeProvider/ThemeProvider";
 
 const tripsSans = localFont({
   src: [
@@ -16,7 +15,7 @@ const tripsSans = localFont({
     // Thêm các biến thể khác
   ],
   variable: "--font-trips-sans",
-  display: "swap",  
+  display: "swap",
 });
 
 const angelBoos = localFont({
@@ -37,11 +36,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${tripsSans.variable} ${Londrina.className} ${angelBoos.variable}`}>
+    <html
+      lang="en"
+      className={`${tripsSans.variable} ${Londrina.className} ${angelBoos.variable}`}
+    >
       <body>
-        <Header />
-        {children}
-        <Footer/>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -49,6 +49,8 @@ import imageAbout1 from "../images/imageAbout1.png";
 import BannerAllTour from "../images/Banner-all-tour.png"
 import mapAllTour from "../images/map-all-tour.png";
 import titleAllTour from "../images/title-banner-all-tour.png";
+import ArrowLeft from "../images/ArrowLeft.png";
+import ArrowRight from "../images/ArrowRight.png"
 
 export const assets = {
   Logo,
@@ -101,7 +103,9 @@ export const assets = {
   imageAbout1,
   BannerAllTour,
   mapAllTour,
-  titleAllTour
+  titleAllTour,
+  ArrowLeft,
+  ArrowRight
 };
 
 export const cloudImages = [

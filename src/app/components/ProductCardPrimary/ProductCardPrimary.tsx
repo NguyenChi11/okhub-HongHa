@@ -14,9 +14,14 @@ type Item = {
   vehicle: string;
   tour_Group: string;
   transport: string;
-  time: string;
+  // time: string;
   price: number;
-  map: StaticImageData;
+  oldPrice: number;
+  newPrice: number;
+  // map: StaticImageData;
+  description: string;
+  time?: string; // ✅ optional
+  map?: string; // ✅ optional
 };
 
 type Props = {
