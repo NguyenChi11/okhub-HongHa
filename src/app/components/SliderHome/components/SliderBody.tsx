@@ -60,7 +60,7 @@ const SliderBody = ({ slider }: Props) => {
           <div className={`${styles.sliderImgWrap}`}>
             <Image src={item.image} className={`${styles.sliderImg}`} alt="" />
             <div className={`${styles.sliderIcon}`}>
-              <CircleMap item="Hong Hoa Travel"/>
+              <CircleMap />
             </div>
           </div>
         </SplideSlide>

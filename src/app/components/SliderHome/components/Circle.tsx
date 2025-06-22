@@ -2,10 +2,10 @@ import React from 'react'
 import styles from "./custom.module.css"
 
 type HeaderProps = {
-  item: string;
+  items: string;
 };
 
-const Circle = ({ item }: HeaderProps) => {
+const Circle = ({ items }: HeaderProps) => {
   return (
     <div>
       <svg className={`${styles.svg}`} viewBox="0 0 300 300">
@@ -26,7 +26,7 @@ const Circle = ({ item }: HeaderProps) => {
             lengthAdjust="spacing"
           >
             <textPath href="#circlePath" startOffset="0%">
-              {item} {item}
+              {items} {items}
             </textPath>
           </text>
         </g>

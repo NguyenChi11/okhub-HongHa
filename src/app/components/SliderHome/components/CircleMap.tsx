@@ -4,13 +4,14 @@ import Circle from './Circle';
 
 
 
+
 const CircleMap = () => {
   const circle_data = {
     title: "Hoa Hong Travel",
   };
   return (
     <div className={`${styles.logoContainer}`}>
-      <Circle item={circle_data.title} />
+      <Circle items={circle_data.title} />
       <svg
         className={`${styles.mapImg}`}
         xmlns="http://www.w3.org/2000/svg"
