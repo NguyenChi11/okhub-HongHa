@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCaretDown } from "@fortawesome/free-solid-svg-icons";
 
+
 const ITEMS_PER_PAGE = 9;
 const ProductFilter = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([
@@ -133,7 +134,7 @@ const ProductFilter = () => {
                 variant="outline"
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
-                className="bg-white"
+                className="bg-white text-gray-600"
               >
                 Previous
               </Button>
@@ -161,7 +162,7 @@ const ProductFilter = () => {
                   setCurrentPage((prev) => Math.min(prev + 1, totalPages))
                 }
                 disabled={currentPage === totalPages}
-                className="bg-white text-gray"
+                className="bg-white text-gray-600"
               >
                 Next
               </Button>

@@ -25,6 +25,11 @@
   height: 100%;
 }
 
+.svgWhite {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
 .rotatingGroup {
   animation: rotate 10s linear infinite;
   transform-origin: 50% 50%;
@@ -37,6 +42,15 @@
   font-weight: 800;
   line-height: normal;
   fill: #111;
+}
+
+.circleTextWhite{
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  fill: #fff;
 }
 
 .mapImg {
@@ -79,12 +93,12 @@
   width: 35.5625rem;
 }
 
-.sliderImgWrap{
+.sliderImgWrap {
   position: relative;
   overflow: hidden;
 }
 
-.sliderIcon{
+.sliderIcon {
   position: absolute;
   top: 0;
   right: 0;
@@ -93,26 +107,26 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.sliderImgWrap:hover .sliderIcon{
+.sliderImgWrap:hover .sliderIcon {
   opacity: 1;
   transform: scale(1.05);
 }
 
-.sliderImg{
-    width: 35.5rem;
-    height: 21.125rem;
-    flex-shrink: 0;
+.sliderImg {
+  width: 35.5rem;
+  height: 21.125rem;
+  flex-shrink: 0;
 }
 
-@media screen and (max-width:639.99px) {
-  .container{
+@media screen and (max-width: 639.99px) {
+  .container {
     display: flex;
     width: calc(200%);
     animation: scroll-mobile 5s linear infinite;
     width: 87rem;
     margin-bottom: 2rem;
   }
-  .title{
+  .title {
     width: 29.6875rem;
     color: var(--Green-Normal, #23704d);
   }

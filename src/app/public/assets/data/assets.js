@@ -51,6 +51,11 @@ import mapAllTour from "../images/map-all-tour.png";
 import titleAllTour from "../images/title-banner-all-tour.png";
 import ArrowLeft from "../images/ArrowLeft.png";
 import ArrowRight from "../images/ArrowRight.png"
+import iconClock from "../images/icon-clock.png"
+import iconHouse from "../images/icon-house.png"
+import iconStar from "../images/icon-star.png"
+import iconLocation from "../images/icon-location.png"
+import iconMotorbike from "../images/icon-motorbike.png"
 
 export const assets = {
   Logo,
@@ -105,7 +110,12 @@ export const assets = {
   mapAllTour,
   titleAllTour,
   ArrowLeft,
-  ArrowRight
+  ArrowRight,
+  iconClock,
+  iconHouse,
+  iconLocation,
+  iconMotorbike,
+  iconStar
 };
 
 export const cloudImages = [
