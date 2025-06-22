@@ -7,14 +7,12 @@ type HeaderProps = {
 };
 
 const SliderHeaderHome = ({ text }: HeaderProps) => {
-  const circle_data = {
-    title: "Hoa Hong Travel",
-  };
+ 
 
   return (
     <div className={`${styles.container}`}>
       <h2 className={`${styles.title}`}>THE GLADDEST MOMENT</h2>
-      <CircleMap item={circle_data.title} />
+      <CircleMap  />
       <div className={`${styles.contentWrap}`}>
         <p className={`${styles.content}`}>{text}</p>
       </div>

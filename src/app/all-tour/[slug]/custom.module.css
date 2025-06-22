@@ -1,0 +1,94 @@
+.containerInfo {
+  position: absolute;
+  z-index: 20;
+  bottom: 2rem;
+  left: 5rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.containerClock {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+.title {
+  color: var(--greyscaletext-0, #fff);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 1.5rem */
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--greyscaletext-5, #f1f1f1);
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+
+.name {
+  color: var(--greyscaletext-0, #fff);
+  font-family: "Londrina Solid";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 2rem */
+  margin-top: 0.75rem;
+  margin-bottom: 1.56rem;
+}
+
+.wrapInfo {
+  display: flex;
+  gap: 3rem;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.itemIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.titleIcon {
+  color: var(--greyscaletext-10, #c5c5c5);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.2rem */
+  letter-spacing: 0.0125rem;
+}
+
+.itemDescription {
+  overflow: hidden;
+  color: var(--greyscaletext-0, #fff);
+  text-overflow: ellipsis;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.3125rem */
+}

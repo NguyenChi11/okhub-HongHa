@@ -7,6 +7,7 @@ import image_5 from "../images/image_5.png";
 export const product_data = [
   {
     index: 1,
+    slug: "ha-giang-loop-adventure",
     name: "Ha Giang Loop Adventure",
     image: image_1,
     duration: "4 days 3 nights",
@@ -22,6 +23,7 @@ export const product_data = [
   },
   {
     index: 2,
+    slug: "sapa-trekking-experience",
     name: "Sapa Trekking Experience",
     image: image_2,
     duration: "3 days 2 nights",
@@ -37,6 +39,7 @@ export const product_data = [
   },
   {
     index: 3,
+    slug: "ha-long-bay-cruise",
     name: "Ha Long Bay Cruise",
     image: image_3,
     duration: "2 days 1 night",
@@ -52,6 +55,7 @@ export const product_data = [
   },
   {
     index: 4,
+    slug: "cao-bang-discovery",
     name: "Cao Bang Discovery",
     image: image_4,
     duration: "5 days 4 nights",
@@ -67,6 +71,7 @@ export const product_data = [
   },
   {
     index: 5,
+    slug: "mekong-delta-tour",
     name: "Mekong Delta Tour",
     image: image_5,
     duration: "3 days 2 nights",
@@ -82,6 +87,7 @@ export const product_data = [
   },
   {
     index: 6,
+    slug: "hoi-an-cultural-journey",
     name: "Hoi An Cultural Journey",
     image: image_1,
     duration: "4 days 3 nights",
@@ -97,6 +103,7 @@ export const product_data = [
   },
   {
     index: 7,
+    slug: "phong-nha-cave-expedition",
     name: "Phong Nha Cave Expedition",
     image: image_2,
     duration: "3 days 2 nights",
@@ -112,6 +119,7 @@ export const product_data = [
   },
   {
     index: 8,
+    slug:"da-lat-highland-adventure",
     name: "Da Lat Highland Adventure",
     image: image_3,
     duration: "2 days 1 night",
@@ -127,6 +135,7 @@ export const product_data = [
   },
   {
     index: 9,
+    slug: "ninh-binh-countryside",
     name: "Ninh Binh Countryside",
     image: image_4,
     duration: "2 days 1 night",
@@ -142,6 +151,7 @@ export const product_data = [
   },
   {
     index: 10,
+    slug: "phu-quoc-island-escape",
     name: "Phu Quoc Island Escape",
     image: image_5,
     duration: "4 days 3 nights",
@@ -157,6 +167,7 @@ export const product_data = [
   },
   {
     index: 11,
+    slug: "mu-cang-chai-rice-terraces",
     name: "Mu Cang Chai Rice Terraces",
     image: image_1,
     duration: "3 days 2 nights",
@@ -172,6 +183,7 @@ export const product_data = [
   },
   {
     index: 12,
+    slug: "con-dao-island-history",
     name: "Con Dao Island History",
     image: image_2,
     duration: "3 days 2 nights",

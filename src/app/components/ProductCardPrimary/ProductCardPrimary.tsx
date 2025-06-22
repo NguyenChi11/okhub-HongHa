@@ -5,23 +5,23 @@ import styles from "./custom.module.css";
 import { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 type Item = {
-  index: number;
+  index?: number;
   image: StaticImageData;
-  name: string;
-  accommodation: string;
-  vehicle: string;
-  tour_Group: string;
-  transport: string;
-  // time: string;
-  price: number;
-  oldPrice: number;
-  newPrice: number;
-  // map: StaticImageData;
-  description: string;
+  name?: string;
+  accommodation?: string;
+  vehicle?: string;
+  tour_Group?: string;
+  transport?: string;
+  price?: number;
+  oldPrice?: number;
+  newPrice?: number;
+  description?: string;
   time?: string; // ✅ optional
   map?: string; // ✅ optional
+  slug?: string;
 };
 
 type Props = {
@@ -30,7 +30,7 @@ type Props = {
 
 const ProductCardPrimary: React.FC<Props> = ({ item }) => {
   return (
-    <div className={`${styles.itemContainer}`}>
+    <Link href={`/all-tour/${item.slug}`} className={`${styles.itemContainer}`}>
       <Image className={`${styles.imgBgr}`} src={item.image} alt="" />
       <div className={`${styles.item}`}>
         <div className={`${styles.priceGroup}`}>
@@ -80,7 +80,7 @@ const ProductCardPrimary: React.FC<Props> = ({ item }) => {
           BOOK NOW <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 
