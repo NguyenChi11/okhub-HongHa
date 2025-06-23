@@ -13,6 +13,7 @@ import CircleWhite from "@/app/components/SliderHome/components/CircleWhite";
 import { product_data } from "@/app/public/assets/data/product";
 import { notFound } from "next/navigation";
 import { use } from "react";
+import FormContact from "@/app/components/FormContact/FormContact";
 
 interface TourDetailPageProps {
   params: Promise<{
@@ -134,6 +135,7 @@ const ProductInfo = ({ params }: TourDetailPageProps) => {
         </div>
       </div>
       <Breadcrumb />
+      <FormContact items={tour}/>
     </div>
   );
 };

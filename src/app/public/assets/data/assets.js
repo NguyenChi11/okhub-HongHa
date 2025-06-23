@@ -56,6 +56,8 @@ import iconHouse from "../images/icon-house.png"
 import iconStar from "../images/icon-star.png"
 import iconLocation from "../images/icon-location.png"
 import iconMotorbike from "../images/icon-motorbike.png"
+import paymentCard from "../images/payment-card.png"
+import visa from "../images/visa.png"
 
 export const assets = {
   Logo,
@@ -115,7 +117,9 @@ export const assets = {
   iconHouse,
   iconLocation,
   iconMotorbike,
-  iconStar
+  iconStar,
+  paymentCard,
+  visa
 };
 
 export const cloudImages = [
