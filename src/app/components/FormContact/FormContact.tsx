@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -27,6 +27,7 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import { assets } from "@/app/public/assets/data/assets";
+import type { BookingData } from "@/app/all-tour/[slug]/page";
 import {
   Form,
   FormControl,
@@ -45,6 +46,8 @@ type Item = {
   tour_Group?: string;
   transport?: string;
   price?: number;
+  selfDrivingPax?: number;
+  localDriverPax?: number;
   oldPrice?: number;
   newPrice?: number;
   description?: string;
@@ -55,6 +58,8 @@ type Item = {
 
 type ListComponentProps = {
   items: Item;
+  bookingData: BookingData;
+  setBookingData: (data: BookingData) => void;
 };
 
 // Schema validation với Zod
@@ -105,11 +110,15 @@ const formSchema = z
 
 type FormData = z.infer<typeof formSchema>;
 
-const FormContact = ({ items }: ListComponentProps) => {
+const FormContact = ({
+  items,
+  bookingData,
+  setBookingData,
+}: ListComponentProps) => {
   const [selfDrivingPax, setSelfDrivingPax] = useState(0);
   const [localDriverPax, setLocalDriverPax] = useState(0);
-  const selfDrivingPrice = items.newPrice ?? 0;
-  const localDriverPrice = items.oldPrice ?? 0;
+  const selfDrivingPrice = items.oldPrice ?? 0;
+  const localDriverPrice = items.newPrice ?? 0;
 
   const total =
     selfDrivingPax * selfDrivingPrice + localDriverPax * localDriverPrice;
@@ -179,6 +188,36 @@ const FormContact = ({ items }: ListComponentProps) => {
     console.log("Form errors:", errors);
   };
 
+  // useEffect(() => {
+  //   const valueArrray = [
+  //     { field: "pax", value: bookingData.pax },
+  //     { field: "name", value: bookingData.name },
+  //     { field: "email", value: bookingData.email },
+  //     { field: "phone", value: bookingData.phone },
+  //     { field: "pickupDate", value: bookingData.pickupDate },
+  //     { field: "pickupTime", value: bookingData.pickupTime },
+  //     { field: "pickupLocation", value: bookingData.pickupLocation },
+  //     { field: "tourDuration", value: bookingData.tourDuration },
+  //     { field: "dropOffDate", value: bookingData.dropOffDate },
+  //     { field: "dropOffLocation", value: bookingData.dropOffLocation },
+  //     { field: "localDriverPax", value: bookingData.localDriverPax },
+  //     { field: "selfDrivingPax", value: bookingData.selfDrivingPax },
+  //     { field: "message", value: bookingData.message },
+  //     {
+  //       field: "serviceChargePercent",
+  //       value: bookingData.serviceChargePercent,
+  //     },
+  //     { field: "tourType", value: bookingData.tourType },
+  //   ];
+  //   setBookingData(valueArrray);
+  // }, [bookingData, pax]);
+
+  // const handleChange = (
+  //   e: React.ChangeEvent<
+  //     HTMLInputElement | HTMLSelectElement | HTMLButtonElement
+  //   >
+  // ) => {};
+
   return (
     <div>
       <Card className={`${styles.container}`}>
@@ -187,7 +226,10 @@ const FormContact = ({ items }: ListComponentProps) => {
           <p className={`${styles.name}`}>{items.name}</p>
         </div>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit, onError)} className="w-full h-full">
+          <form
+            onSubmit={form.handleSubmit(onSubmit, onError)}
+            className="w-full h-full"
+          >
             <div className={`${styles.BodyForm}`}>
               <div className={`${styles.containerPrice}`}>
                 <div className={`${styles.priceItem}`}>

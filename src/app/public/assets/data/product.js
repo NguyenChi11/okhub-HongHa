@@ -119,7 +119,7 @@ export const product_data = [
   },
   {
     index: 8,
-    slug:"da-lat-highland-adventure",
+    slug: "da-lat-highland-adventure",
     name: "Da Lat Highland Adventure",
     image: image_3,
     duration: "2 days 1 night",

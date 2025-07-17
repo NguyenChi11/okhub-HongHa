@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./custom.module.css";
 import Image from "next/image";
 import { assets } from "@/app/public/assets/data/assets";
@@ -14,6 +14,25 @@ import { product_data } from "@/app/public/assets/data/product";
 import { notFound } from "next/navigation";
 import { use } from "react";
 import FormContact from "@/app/components/FormContact/FormContact";
+import Receipt from "@/app/components/Receipt/Receipt";
+
+export interface BookingData {
+  tourType: string;
+  name: string;
+  pax: number;
+  email: string;
+  phone: string;
+  pickupDate: string;
+  pickupTime: string;
+  pickupLocation: string;
+  tourDuration: string;
+  dropOffDate: string;
+  dropOffLocation: string;
+  selfDrivingPax: number;
+  localDriverPax: number;
+  message: string;
+  serviceChargePercent: number;
+}
 
 interface TourDetailPageProps {
   params: Promise<{
@@ -22,6 +41,24 @@ interface TourDetailPageProps {
 }
 
 const ProductInfo = ({ params }: TourDetailPageProps) => {
+  const [bookingData, setBookingData] = useState<BookingData>({
+    tourType: "Ha Giang Loop tour: Itinerary in 3 Days 4 Nights",
+    name: "",
+    pax: 1,
+    email: "",
+    phone: "",
+    pickupDate: "",
+    pickupTime: "",
+    pickupLocation: "",
+    tourDuration: "3 Days 4 Nights",
+    dropOffDate: "",
+    dropOffLocation: "",
+    localDriverPax: 0,
+    selfDrivingPax: 0,
+    message: "",
+    serviceChargePercent: 3,
+  });
+
   const { slug } = use(params);
 
   const tour = product_data.find((t) => t.slug === slug);
@@ -93,7 +130,9 @@ const ProductInfo = ({ params }: TourDetailPageProps) => {
                   />
                   <p className={`${styles.titleIcon}`}>SPECIAL</p>
                 </div>
-                <p className={`${styles.itemDescription}`}>{tour.description}</p>
+                <p className={`${styles.itemDescription}`}>
+                  {tour.description}
+                </p>
               </div>
               <div className={`${styles.items}`}>
                 <div className={`${styles.itemIcon}`}>
@@ -117,7 +156,9 @@ const ProductInfo = ({ params }: TourDetailPageProps) => {
                   />
                   <p className={`${styles.titleIcon}`}>ACCOMODATION</p>
                 </div>
-                <p className={`${styles.itemDescription}`}>{tour.accommodation}</p>
+                <p className={`${styles.itemDescription}`}>
+                  {tour.accommodation}
+                </p>
               </div>
               <div className={`${styles.items}`}>
                 <div className={`${styles.itemIcon}`}>
@@ -135,7 +176,12 @@ const ProductInfo = ({ params }: TourDetailPageProps) => {
         </div>
       </div>
       <Breadcrumb />
-      <FormContact items={tour}/>
+      <FormContact
+        items={tour}
+        bookingData={bookingData}
+        setBookingData={setBookingData}
+      />
+      <Receipt items={tour} bookingData={bookingData} />
     </div>
   );
 };
